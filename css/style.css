@@ -1,0 +1,44 @@
+/* Fondo temporal */
+body {
+
+    /* Configuración de estilo de página a modo de prueba */
+
+    background-image: url(../images/tmp_fondo.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    margin: 0;
+
+    height: 300vh
+}
+
+/* Botón interactivo flotante */
+
+.chat-trigger {
+
+    /* *POSICION* */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Para que el botón este por encima de los demas elementos*/ 
+    
+    /* *TAMAÑO* */
+    width: 70px;
+    height: 70px;
+
+    /* *DISEÑO* */
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #8bbed1;
+    box-shadow: 0px 4px 10px #477d90;
+    transition: transform 0.2s ease;
+}
+
+/* Al pasar el mouse por encima */
+.chat-trigger:hover{
+
+    /* *DISEÑO* */
+    transform: scale(1.1)
+}
