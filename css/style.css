@@ -33,12 +33,65 @@ body {
     cursor: pointer;
     background-color: #8bbed1;
     box-shadow: 0px 4px 10px #477d90;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: bottom right;
 }
 
 /* Al pasar el mouse por encima */
 .chat-trigger:hover{
 
-    /* *DISEÑO* */
-    transform: scale(1.1)
+    /* *ANIMACIÓN* */
+    transform: scale(1.1);
 }
+
+.help-window-1 {
+
+    /* *POSICIÓN* */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    /* *TAMAÑO* */
+    width: 320px;
+    height: 420px;
+
+    /* *ESTILOS* */
+    background-color: #66a1b3;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px #477d90;
+
+    /* *CONTENIDO* */
+    overflow: hidden;
+
+    /* *ESTADO BASE DE LA VENTANA* (invisible por defecto)*/
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    /* *ANIMACIÓN* */
+    transform-origin: bottom right;
+}
+
+.help-window-1.is-active {
+
+    /* *ESTADO DE ACTIVACIÓN DE LA VENTANA* */
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+
+}
+
+.chat-trigger.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+    transform-origin: bottom right;
+}
+
+.chat-body {
+    height: calc(100% - 60px);
+    overflow-y: auto
+}
+
