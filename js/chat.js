@@ -35,7 +35,7 @@ chatForm.addEventListener('submit', async function (e) {
 
         const data = await response.json();
 
-        labuBubble.textContent = data.reply || 'No pude procesar tu mensaje.';
+        labuBubble.innerHTML = marked.parse(data.reply) || 'No pude procesar tu mensaje.';
 
     } catch (error) {
         console.error('Error:', error);
