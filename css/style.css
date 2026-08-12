@@ -96,7 +96,7 @@ body {
 
 .chat-body {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: rgb(0, 255, 255);
 }
 
@@ -133,10 +133,17 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: rgb(255, 255, 57);
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: auto;
 }
 
 .chat-window.is-hidden{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    position: absolute;
+    width: 100%;
 }
 
 /* *Cabezal* */
@@ -172,9 +179,4 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-}
-
-/* *Elementos ocultos* */
-.is-hidden{
-    display: none;
 }
