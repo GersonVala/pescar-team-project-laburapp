@@ -1,0 +1,5 @@
+# archivos de entorno y claves secretas
+.env
+
+# Módulos e instalación de Node
+node_modules/
