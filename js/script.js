@@ -11,6 +11,7 @@ const W11x = document.querySelector('#W1-1-x')
 const W13x = document.querySelector('#W1-3-x')
 const W2x = document.querySelector('#W2-x')
 const W3x = document.querySelector('#W3-x')
+const WChat = document.querySelector('#W-chat-labu')
 
 // Botones de las ventanas
 
@@ -18,12 +19,12 @@ const W3x = document.querySelector('#W3-x')
 const btn_primera_vez = document.querySelector("#btn-primera-vez") 
 const btn_busco_contratar = document.querySelector("#btn-busco-contratar") 
 const btn_busco_solicitudes = document.querySelector("#btn-busco-solicitudes") 
-const btn_iniciar_chat_labu = document.querySelector(".btn-iniciar-chat-labu") 
+const btn_iniciar_chat_labu = document.querySelector("#btn-iniciar-chat-labu") 
 //// W1x
 const btn_quiero_registrarme = document.querySelector("#btn-quiero-registrarme") 
 const btn_tutorial = document.querySelector("#btn-tutorial") 
 const btn_preguntas_frecuentes = document.querySelector("#btn-preguntas-frecuentes") 
-//btn_iniciar_chat_labu de Wx
+const btn_iniciar_chat_labu_W1 = document.querySelector("#btn-iniciar-chat-labu-W1") 
 //// W11x
 const btn_quiero_ofrecer_servicios = document.querySelector("#btn-quiero-ofrecer-servicios") 
 const btn_quiero_contratar_servicios = document.querySelector("#btn-quiero-contratar-servicios") 
@@ -80,8 +81,14 @@ btn_primera_vez.addEventListener('click', function () {
 
 btn_iniciar_chat_labu.addEventListener('click', function () {
     Wx.classList.add('is-hidden')
+    WChat.classList.remove('is-hidden')
+    
+})
+
+btn_iniciar_chat_labu_W1.addEventListener('click', function () {
     W1x.classList.add('is-hidden')
-    // TODO: Abrir chat
+    WChat.classList.remove('is-hidden')
+
 })
 
 btn_quiero_registrarme.addEventListener('click', function () {

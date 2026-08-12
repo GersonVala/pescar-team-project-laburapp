@@ -42,7 +42,7 @@
             <!-- ! w:window o:option -->
 
             <!-- x Primera ventana - Opciones-->
-            <div class="chat-window" id="Wx">
+            <div class="chat-window is-hidden" id="Wx">
                 <button class="chat-option-btn" id="btn-primera-vez">
                     Es la primera vez que usas LaburAPP?
                 </button>
@@ -55,7 +55,7 @@
                     Busco solicitudes de trabajo
                 </button>
                 
-                <button class="chat-option-btn btn-iniciar-chat-labu">
+                <button class="chat-option-btn" id="btn-iniciar-chat-labu">
                     Hablar con Labu
                 </button>
             </div>
@@ -74,7 +74,7 @@
                     Preguntas Frecuentes
                 </button>
             
-                <button class="chat-option-btn btn-iniciar-chat-labu">
+                <button class="chat-option-btn" id="btn-iniciar-chat-labu-W1">
                     Hablar con Labu
                 </button>
             </div>
@@ -135,6 +135,39 @@
                     Calculadora de costos
                 </button>
             
+            </div>
+
+            <div class="chat-window" id="W-chat-labu">
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message labu-message">
+                        ¡Hola! Soy Labu. ¿En que puedo ayudarte?
+                    </div>
+
+                    <div class="message user-message">
+                        Hola, necesito información sobre el registro
+                    </div>
+
+                </div>
+
+                <form class="chat-input-area" id="chat-form">
+                    <input
+                        type="text"
+                        placeholder="Escribi tu mensaje..."
+                        id="chat-input"
+                        aria-label="cuadro para escribir mensajes al chat"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="submit"
+                        class="chat-send-btn"
+                        aria-label="Enviar mensaje">
+                        ➤
+                    </button>
+
+                </form>
+
             </div>
 
         </div>
