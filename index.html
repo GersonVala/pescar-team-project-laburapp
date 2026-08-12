@@ -21,13 +21,18 @@
 
         <!-- Cabeza de la ventana - estatico -->
         <div class="chat-header">
-            <h3>Chat con Labu</h3>
-            <button class="chat-close-btn" aria-label="Cerrar ventana de chat">
-                ✕
-            </button>
-            <button class="chat-user-history-btn" aria-label="Ver conversaciónes anteriores">
-                H
-            </button>
+            <div class="chat-header-space"></div>
+            <div class="chat-title">
+                <h3>Chat con Labu</h3>
+            </div>
+            <div class="chat-header-actions">
+                <button class="chat-user-history-btn" aria-label="Ver conversaciónes anteriores">
+                    H
+                </button>
+                <button class="chat-close-btn" aria-label="Cerrar ventana de chat">
+                    ✕
+                </button>
+            </div>
         </div>
 
         <!-- Cuerpo de la ventana de ayuda -->
@@ -35,28 +40,113 @@
             <!-- Pantallas de las ventanas de ayuda -->
             <!-- ! w:window o:option -->
 
-            <!-- Primera ventana - Opciones-->
-            <div class="chat-window-1">
-                <button class="chat-w1o1">
+            <!-- x Primera ventana - Opciones-->
+            <div class="chat-window" id="Wx">
+                <button class="chat-option-btn">
                     Es la primera vez que usas LaburAPP?
                 </button>
                 
-                <button class="chat-w1o2">
+                <button class="chat-option-btn">
                     Busco un profesional / oficio
                 </button>
                 
-                <button class="chat-w1o3">
+                <button class="chat-option-btn">
                     Busco solicitudes de trabajo
                 </button>
                 
-                <button class="chat-w1o4">
+                <button class="chat-option-btn">
                     Hablar con Labu
+                </button>
+            </div>
+
+            <!-- 1.x - Opciones-->
+            <div class="chat-window is-hidden" id="W1-x">
+                <button class="chat-option-btn">
+                    Quiero registrarme
+                </button>
+            
+                <button class="chat-option-btn">
+                    Tutorial por la página
+                </button>
+            
+                <button class="chat-option-btn">
+                    Preguntas Frecuentes
+                </button>
+            
+                <button class="chat-option-btn">
+                    Hablar con Labu
+                </button>
+            </div>
+
+            <!-- 1.1.x  - Opciones-->
+            <div class="chat-window is-hidden" id="W1-1-x">
+                <button class="chat-option-btn">
+                    Quiero ofrecer servicios
+                </button>
+            
+                <button class="chat-option-btn">
+                    Quiero contratar servicios
+                </button>
+                
+                <!-- TODO : Agregar una nota que diga que se pueden hacer ambas -->
+            </div> 
+
+            <!-- 1.3.x  - Opciones-->
+            <div class="chat-window is-hidden" id="W1-3-x">
+                <button class="chat-option-btn">
+                    ¿Como puedo subir fotos de mis trabajos?
+                </button>
+            
+                <button class="chat-option-btn">
+                    Hacer una pregunta
+                </button>
+            
+            </div>
+
+            <!-- 2.x  - Opciones-->
+            <div class="chat-window is-hidden" id="W2-x">
+                <button class="chat-option-btn">
+                    Buscar profesionales / servicios
+                </button>
+            
+                <button class="chat-option-btn">
+                    Calculadora de costos
+                </button>
+
+                <button class="chat-option-btn">
+                     Ver profesionales destacados
+                </button>
+
+                <button class="chat-option-btn">
+                    Nuestra Garantía
+                </button> 
+
+            
+            </div>
+
+            <!-- 3.x  - Opciones-->
+            <div class="chat-window is-hidden" id="W3-x">
+                <button class="chat-option-btn">
+                    Buscar profesionales / servicios
+                </button>
+            
+                <button class="chat-option-btn">
+                    Calculadora de costos
+                </button>
+            
+                <button class="chat-option-btn">
+                    Ver profesionales destacados
+                </button>
+            
+                <button class="chat-option-btn">
+                    Nuestra Garantía
                 </button>
             </div>
 
         </div>
 
     </div>
+
     
 <!-- Referencia al javascript -->
 <script src="js/script.js"></script>
